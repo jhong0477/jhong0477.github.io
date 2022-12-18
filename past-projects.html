@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jeeho Hong EPortfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="eportfolio.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <b class="logotext">Jeeho Hong EPortfolio</b>
+    </div>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='index.html'"
+            class="dropbtn"
+          >
+            Home
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='resume.html'"
+            class="dropbtn"
+          >
+            Resume
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='past-projects.html'" class="active" 
+            class="dropbtn"
+          >
+            Past Projects
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='capstone.html'"
+            class="dropbtn"
+          >
+            WRIT 4999 Capstone
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='reflection.html'"
+            class="dropbtn"
+          >
+           TWC Reflection
+          </button>
+        </div>
+      </div>  
+    </nav>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <main id="umn-main" role="main">
+      <div class="welcome-banner">
+        <div class="welcome">
+          <h1>Past Projects</h1>
+          <h2>
+            The following are examples of previous projects which I believe to be a good representation<br> of my growth in Technical Writing and Communication.
+          </h2>
+        </div>
+      </div>
+      <div class="grid-container">
+        <a href="materials/atlas.rar" download class="tn-link"
+          ><img
+            class="thumbnail"
+            src="images/atlas home.png"
+            alt="Download Visible Heart Lab draft"
+        /></a>
+        <div class="description">
+          <h1>Atlas of Human Cardiac Anatomy</h1>
+          <p>The Visible Heart® Lab is a division of the University of Minnesota's Surgery department, co-founded by Dr. Paul A. Iaizzo in collaboration with Medtronic to conduct translational systems physiology research which ranges from cellular and tissue studies to organ and whole body investigations. I am developing this interface as part of an overhaul project for the Atlas of Human Cardiac Anatomy, which features a comprehensive database of catalogued heart profiles.</p>
+          <a href="materials/atlas.rar" class="download-link" download>Click here to download WIP build of the Atlas Site.</a>
+          <p>Note: This interface is still in active development, so it is not live and many planned features have not been integrated yet.</p>
+        </div>
+        <br>
+        <a href="materials/formal report.docx" download class="tn-link"
+          ><img
+            class="thumbnail"
+            src="images/microchips.png"
+            alt="Download formal report on 2021 microchip shortage"
+        /></a>
+        <div class="description">
+          <h1>Formal Report: The 2021 Microchip Shortage</h1>
+          <p>The purpose of this report is to assess whether the United States’ goal of shifting towards domestic manufacturing of semiconductors as its primary source of supply would be an effective means of addressing the effects of the global semiconductor shortage in America. </p>
+          <a href="materials/formal report.docx" class="download-link" download>Click here to download the formal report.</a>
+        </div>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>

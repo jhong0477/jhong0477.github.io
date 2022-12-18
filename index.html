@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jeeho Hong EPortfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="eportfolio.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <b class="logotext">Jeeho Hong EPortfolio</b>
+    </div>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='index.html'"
+            class="active" class="dropbtn"
+          >
+            Home
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='resume.html'"
+            class="dropbtn"
+          >
+            Resume
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='past-projects.html'"
+            class="dropbtn"
+          >
+            Past Projects
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='capstone.html'"
+            class="dropbtn"
+          >
+            WRIT 4999 Capstone
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='reflection.html'"
+            class="dropbtn"
+          >
+           TWC Reflection
+          </button>
+        </div>
+      </div>  
+    </nav>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <main id="umn-main" role="main">
+      <div class="welcome-banner">
+        <div class="welcome">
+          <h1>Welcome</h1>
+          <h2>
+            This site features a collection of documents to serve as a porfolio of <br>my work in the field of Technical Writing and Communication.
+          </h2>
+        </div>
+      </div>
+      <div class="grid-container">
+        <a href="resume.html" class="tn-link"
+          ><img
+            class="thumbnail"
+            src="images/resume tn.png"
+            alt="Link to resume page"
+        /></a>
+        <a href="past-projects.html" class="tn-link"
+          ><img
+            class="thumbnail"
+            src="images/past projects tn.png"
+            alt="Link to past projects page"
+        /></a>
+        <a href="capstone.html" class="tn-link"
+          ><img
+            class="thumbnail"
+            src="images/capstone tn.png"
+            alt="Link to capstone page"
+        /></a>
+      </div>
+      <!-- gifpage -->
+    </main>
+  </body>
+</html>

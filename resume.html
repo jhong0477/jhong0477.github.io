@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jeeho Hong EPortfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="eportfolio.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <b class="logotext">Jeeho Hong EPortfolio</b>
+    </div>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='index.html'"
+            class="dropbtn"
+          >
+            Home
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='resume.html'" class="active" 
+            class="dropbtn"
+          >
+            Resume
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='past-projects.html'"
+            class="dropbtn"
+          >
+            Past Projects
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='capstone.html'"
+            class="dropbtn"
+          >
+            WRIT 4999 Capstone
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='reflection.html'"
+            class="dropbtn"
+          >
+           TWC Reflection
+          </button>
+        </div>
+      </div>  
+    </nav>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <main id="umn-main" role="main">
+      <div class="grid-container">
+        <a href="materials/resume full.png" download class="tn-link"
+          ><img
+            class="thumbnail"
+            src="materials/resume full.png"
+            alt="Link to Resume"
+        /></a>
+        <div class="description">
+          <h1>Resume</h1>
+          <a href="resume full.png" class="download-link" download>Click here to download my resume.</a>
+        </div>
+      </div>
+      <!-- gifpage -->
+    </main>
+  </body>
+</html>

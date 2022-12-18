@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jeeho Hong EPortfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="eportfolio.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <b class="logotext">Jeeho Hong EPortfolio</b>
+    </div>
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='index.html'"
+            class="dropbtn"
+          >
+            Home
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='resume.html'"
+            class="dropbtn"
+          >
+            Resume
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='past-projects.html'"
+            class="dropbtn"
+          >
+            Past Projects
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='capstone.html'" class="active" 
+            class="dropbtn"
+          >
+            WRIT 4999 Capstone
+          </button>
+        </div>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='reflection.html'"
+            class="dropbtn"
+          >
+           TWC Reflection
+          </button>
+        </div>
+      </div>  
+    </nav>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <main id="umn-main" role="main">
+      <div class="grid-container">
+        <a href="materials/WRIT 4999 capstone.docx" download class="tn-link"
+          ><img
+            class="thumbnail"
+            src="images/capstone cover.png"
+            alt="Link to Resume"
+        /></a>
+        <div class="description">
+          <h1>WRIT 4999 Capstone</h1>
+          <p>Mobile devices such as smartphones and tablets have quickly come to rival desktop computers as the primary platform for accessing web-based services, and it is now standard practice for desktop sites and programs to have some sort of mobile equivalent. However, when it comes to the joint development of mobile and desktop interfaces for a singular product, considerations for usability and accessibility can vary greatly between the two versions. With this in mind, how do considerations for accessibility and usability differ between desktop and mobile versions of the same service? The practice of addressing the unique requirements of each platform has not yet been standardized, and different services can be observed utilizing their own methodologies to achieve this goal. In this paper, I attempt to answer the aforementioned question by comparing two popular streaming platforms that offer both desktop and mobile iterations of their interface: music streaming service Spotify, and video sharing site YouTube. 
+          </p>
+          <a href="materials/writ 4999 capstone.docx" class="download-link" download>Click here to download my WRIT 4999 Capstone project.</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

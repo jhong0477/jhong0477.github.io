@@ -1,0 +1,167 @@
+body {
+  font-family: "Segoe UI",Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 100px;
+  background-color: #7a0019;
+  overflow: auto;
+}
+
+.logotext {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 25px;
+  font-size: 35px;
+  color: white;
+}
+
+.topnav {
+  display: block;
+  background-color: #d5d6d2;
+  overflow: hidden;
+}
+.topnav .navlink {
+  display: block;
+  float: left;
+  display: block;
+  color: #333333;
+  text-align: center;
+  padding: 21px 16px;
+  text-decoration: none;
+}
+.topnav .icon {
+  display: block;
+  display: none;
+}
+
+.dropdown {
+  display: block;
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #333333;
+  padding: 21px 16px;
+  background-color: inherit;
+  font-family: "Segoe UI",Arial,sans-serif;
+}
+.dropdown-content {
+  font-size: 14px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: #333333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.topnav .navlink:hover,
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color: #333333;
+  cursor: pointer;
+}
+.dropdown-content a:hover {
+  background-color: white;
+  color: #333333;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown button.active {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding: 21px 16px;
+  font-family: inherit;
+  font-weight: bold;
+  color: #7a0019;
+}
+.active:hover {
+  cursor: pointer;
+  background-color: white;
+}
+.welcome {
+  top: 40%;
+  font-family:"Century Gothic",sans-serif;
+  color: black;
+  width: 100%;
+  padding-left: 4%;
+  z-index: 1;
+  margin-bottom: 60px;
+}
+.welcome h1 {
+  font-size: 50pt;
+  line-height: 75pt;
+}
+.welcome h2 {
+  font-size: 25pt;
+  line-height: 30pt;
+}
+.thumbnail {
+  max-width: 80%;
+}
+.description {
+  width: 200%;
+}
+.description h1{
+  color: white;
+  font-size: 35pt;
+}
+.description p{
+  color: white;
+  font-size: 20pt;
+}
+.download-link {
+  color: white;
+  font-size: 20pt;
+}
+@media only screen and (min-width: 800px){
+  div.grid-container {
+    /* set it to display using "grid" with three equal columns
+        and a column gap of 5% and row gap of 20% */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+    row-gap: 3%;
+  
+    /* define some colors to make the container easier to see */
+    background-color: #333333;
+    border: 1px solid gray;
+    
+    /* add some left and right padding to match the column-gap
+        to make it look more balanced */
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    /* add some top and bottom padding to match the row-gap
+        to make it look more balanced */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    /* we could have instead used the shortcut "padding: 20px 5%"
+        to define "top&bottom" and "left&right" padding */
+  }
+  div.tn-link {
+    /* add some colors to make the box easier to see */
+    background-color: white;
+    border: 1px solid gray;
+
+    /* add some padding inside the box to make it look nice */
+    padding: 1em;
+  }
+}
